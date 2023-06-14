@@ -12,10 +12,18 @@ namespace WinFormsTest
 {
     public partial class CalcForm : Form
     {
+        public float var1;
+        public float var2;
+        public int oper;
+
         public CalcForm()
         {
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += (sender as Button).Text;
+        }
     }
 }
